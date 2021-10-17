@@ -4,8 +4,15 @@ package br.com.zup.Exercicio2Revisao;
 //usuário deve decidir se irá adicionar mais de um candidato, exibir todos os
 //candidatos cadastrados ou excluir um candidato pelo número de matrícula.
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+        /* Testando métodos adicionarCandidato + listarCandidato:
+        ServicoCandidato.adicionarCandidato("Mari", 477, 10);
+        ServicoCandidato.listarCandidatos();
 
+         */
     }
 }

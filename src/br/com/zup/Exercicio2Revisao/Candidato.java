@@ -38,9 +38,9 @@ public class Candidato {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("Nome: " + nome);
-        retorno.append("Número de matrícula: " + numeroMatricula);
-        retorno.append("Nota: " + nota);
+        retorno.append("\n Nome: " + nome);
+        retorno.append("\n Número de matrícula: " + numeroMatricula);
+        retorno.append("\n Nota: " + nota);
         return retorno.toString();
     }
 }
