@@ -1,12 +1,17 @@
-package br.com.zup.ExerciciosRevisao;
+package br.com.zup.Exercicio1Revisao;
 
 //Criar atributos da classe
-public class Produtos {
+public class Produto {
     private String nome;
     private double preco;
 
-  //Criar método construtor
-    public Produtos(String nome, double preco) {
+    //Criar método construtor
+
+
+    public Produto() {
+    }
+
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -35,8 +40,8 @@ public class Produtos {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("Nome: " + nome);
-        retorno.append("Preço: " + preco);
+        retorno.append("\n Nome: " + nome);
+        retorno.append("\n Preço: " + preco);
         return retorno.toString();
     }
 }
