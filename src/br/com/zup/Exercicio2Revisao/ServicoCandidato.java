@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServicoCandidato {
-    private List<Candidato>candidatos = new ArrayList<>();
+    private static List<Candidato> candidatos = new ArrayList<>();
 
     public ServicoCandidato(List<Candidato> candidatos) {
         this.candidatos = candidatos;
@@ -24,4 +24,13 @@ public class ServicoCandidato {
         retorno.append("Candidatos: " + candidatos);
         return retorno.toString();
     }
+
+    //método para adicionar um candidato
+
+    public static Candidato adicionarCandidato(String nome, double numeroMatricula, double nota){
+        Candidato candidato = new Candidato(nome, numeroMatricula, nota);
+        candidatos.add(candidato);
+        return candidato;
+    }
+
 }
