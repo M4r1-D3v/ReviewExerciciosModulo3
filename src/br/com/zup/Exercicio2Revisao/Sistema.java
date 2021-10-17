@@ -20,4 +20,10 @@ public class Sistema {
         return ServicoCandidato.adicionarCandidato(nome, numeroMatricula, nota);
     }
 
+    //método para receber a entrada de dados do método excluirCandidato
+    public static void excluirCandidato(){
+        String numeroMatricula = entradaDados("Por favor, digite o número de matrícula do candidato que deseja excluir: ").nextLine();
+        ServicoCandidato.excluirCandidato(numeroMatricula);
+    }
+
 }
