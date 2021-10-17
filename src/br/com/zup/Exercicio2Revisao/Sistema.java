@@ -34,7 +34,7 @@ public class Sistema {
         System.out.println("-------------------------------------------------------------------------------");
         System.out.println("\n ");
         System.out.println("Para adicionar um candidato, por favor digite [1]");
-        System.out.println("Para listar os candidatos cadastrados, por favor digite [2]");
+        System.out.println("Para exibir os candidatos cadastrados, por favor digite [2]");
         System.out.println("Para excluir um candidato, por favor digite [3]");
         System.out.println("Para sair do sistema, por favor digite [4]");
     }
@@ -46,11 +46,26 @@ public class Sistema {
         while (operarMenu){
             menu();
             int escolhaUsuario = entradaDados("Por favor digite a opção desejada: ").nextInt();
-            if (escolhaUsuario==1){
+            if (escolhaUsuario == 1){
                 Candidato candidato = new Candidato();
                 candidato = adicionarCandidato();
+            }else if (escolhaUsuario == 2){
+                System.out.println("------------------------");
+                System.out.println("Candidatos cadastrados: ");
+                System.out.println("------------------------");
+                ServicoCandidato.listarCandidatos();
+            }else if (escolhaUsuario == 3){
+                String numeroMatricula = entradaDados("Por favor digite o número de matrícula do candidato:").nextLine();
+                ServicoCandidato.excluirCandidato(numeroMatricula);
+                System.out.println("Candidato excluído com sucesso!");
+            }else  if (escolhaUsuario == 4){
+                System.out.println("Obrigade e até a próxima!");
+                operarMenu = false;
+            }else{
+                System.out.println("Ops, opção inválida! Tente outra vez =)");
             }
         }
+        return operarMenu;
     }
 
 }
