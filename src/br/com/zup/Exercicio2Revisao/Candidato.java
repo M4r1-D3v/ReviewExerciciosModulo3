@@ -5,6 +5,9 @@ public class Candidato {
     private String numeroMatricula;
     private double nota;
 
+    public Candidato() {
+    }
+
     public Candidato(String nome, String numeroMatricula, double nota) {
         this.nome = nome;
         this.numeroMatricula = numeroMatricula;

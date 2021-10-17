@@ -39,4 +39,18 @@ public class Sistema {
         System.out.println("Para sair do sistema, por favor digite [4]");
     }
 
+    //método para executar o programa completo
+
+    public static boolean executar(){
+        boolean operarMenu = true;
+        while (operarMenu){
+            menu();
+            int escolhaUsuario = entradaDados("Por favor digite a opção desejada: ").nextInt();
+            if (escolhaUsuario==1){
+                Candidato candidato = new Candidato();
+                candidato = adicionarCandidato();
+            }
+        }
+    }
+
 }
