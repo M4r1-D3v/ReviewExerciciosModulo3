@@ -27,7 +27,7 @@ public class ServicoCandidato {
 
     //método para adicionar um candidato
 
-    public static Candidato adicionarCandidato(String nome, double numeroMatricula, double nota){
+    public static Candidato adicionarCandidato(String nome, String numeroMatricula, double nota){
         Candidato candidato = new Candidato(nome, numeroMatricula, nota);
         candidatos.add(candidato);
         return candidato;
@@ -39,6 +39,14 @@ public class ServicoCandidato {
             System.out.println("\n" + candidatoReferencia);
         }
     }
+    // método para excluir candidatos a partir do número de matrícula fornecido
 
+    public static void excluirCandidato( double numeroMatricula){
+        Candidato candidatoExcluido = null;
+        for (Candidato candidatoReferencia:candidatos) {
+            if (candidatoReferencia.getNumeroMatricula().equals(numeroMatricula))
+
+        }
+    }
 
 }

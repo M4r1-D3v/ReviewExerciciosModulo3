@@ -2,10 +2,10 @@ package br.com.zup.Exercicio2Revisao;
 
 public class Candidato {
     private String nome;
-    private double numeroMatricula;
+    private String numeroMatricula;
     private double nota;
 
-    public Candidato(String nome, double numeroMatricula, double nota) {
+    public Candidato(String nome, String numeroMatricula, double nota) {
         this.nome = nome;
         this.numeroMatricula = numeroMatricula;
         this.nota = nota;
@@ -19,11 +19,11 @@ public class Candidato {
         this.nome = nome;
     }
 
-    public double getNumeroMatricula() {
+    public String getNumeroMatricula() {
         return numeroMatricula;
     }
 
-    public void setNumeroMatricula(double numeroMatricula) {
+    public void setNumeroMatricula(String numeroMatricula) {
         this.numeroMatricula = numeroMatricula;
     }
 
